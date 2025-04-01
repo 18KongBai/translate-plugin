@@ -1,8 +1,8 @@
 {
-  "name": "my-chrome-plugin",
-  "displayName": "My chrome plugin",
+  "name": "translate-plugin",
+  "displayName": "translate-plugin",
   "version": "0.0.1",
-  "description": "A basic Plasmo extension.",
+  "description": "基于deepseak的翻译插件",
   "author": "kanghuhui",
   "scripts": {
     "dev": "plasmo dev",
@@ -10,6 +10,9 @@
     "package": "plasmo package"
   },
   "dependencies": {
+    "@plasmohq/messaging": "^0.7.1",
+    "@plasmohq/storage": "^1.15.0",
+    "antd-mobile": "^5.39.0",
     "plasmo": "0.90.3",
     "react": "18.2.0",
     "react-dom": "18.2.0"
