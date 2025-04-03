@@ -9,12 +9,10 @@ export function Setting() {
   const [form] = Form.useForm()
   // 使用 useStorage 获取和更新存储值
   const [data, setData] = useStorage("data", (storedValue) => storedValue || {})
-  console.log(data, "data")
 
   // 在data加载完成后设置表单值
   useEffect(() => {
     if (data && Object.keys(data).length > 0) {
-      console.log("设置表单初始值:", data)
       form.setFieldsValue(data)
     }
   }, [data, form])

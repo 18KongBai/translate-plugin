@@ -24,9 +24,9 @@ export const getStyle = () => {
 /**
  * 设置插件锚点，将组件挂载到页面body上
  */
-export const getInlineAnchor = async () => {
-  return document.body
-}
+// export const getInlineAnchor = async () => {
+//   return document.body
+// }
 
 /**
  * 检测文本是否包含中文字符
